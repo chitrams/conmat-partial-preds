@@ -1,5 +1,5 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
-.Random.seed|object|28fa9cd147343e88|||||||||||||||
+.Random.seed|object|cd1315d506155209|||||||||||||||
 age_grid|stem|be2a1ab5b28d3cd1|fcb329943d0bc16d|fbd46d39e6d5830f|110701780||t19927.1676415699s|a52856548c537ca7|144762|rds|local|vector|||1.11||
 age_predictions|stem|506dfa8f3faf69a5|5a13f69c2e777a27|5de960e7a6d58afa|-1409512639||t19927.1676515198s|56fef9aad828a5ad|196554|rds|local|vector|||0.67||
 age_predictions_long|stem|5eea43e9c1305ed6|e1c7e0deeb51d2cd|79bcbc8a1f581a37|-2083607767||t19927.168577955s|aa1709d9cdfc8b1b|347114|rds|local|vector|||0.03||
@@ -13,12 +13,12 @@ fit_home_summary|stem|4c598a7b93caf446|70d3f96bb19193eb|5a2d4b83b0ed9740|-207798
 fit_other|stem|5fb87462258f9738|077d0a09188fe0ef|3e6168b55b1a9dcf|1510455385||t19927.1689273635s|8e476241f5ab1a5a|767947|rds|local|vector|||0.02||
 fit_school|stem|684d62c3c9197006|ccfe7c77368caa46|3e6168b55b1a9dcf|355718807||t19927.1689260631s|1c1a3b5f50b41755|756134|rds|local|vector|||0||
 fit_work|stem|bc99288ba55e4d25|04c9da02472b79c6|3e6168b55b1a9dcf|-1853073901||t19927.168924901s|7283bef1064cfa19|761257|rds|local|vector|||0||
-gg_age_partial_pred_long|function|ce33db0fae672d39|||||||||||||||
+gg_age_partial_pred_long|function|674a111ad22757f0|||||||||||||||
 gg_age_partial_predictions|function|2f6cf7bd77126996|||||||||||||||
 partial_dep_home|stem|41b8712639cb096b|259e1487291761ae|5a2d4b83b0ed9740|527752329||t19927.1605439287s|a20c633a28649392|7112958|rds|local|vector|||1.07|argument pattern has length  1 and only the first element will be used. argument pattern has length  1 and only the first element will be used. argument pattern has length  1 and only the first element will be used. argument pattern has length  1 and only the first element will be used. argument pattern has length  1 and only the first element will be used. argument pattern has length  1 and only the first element will be used|
 pivot_longer_age_preds|function|1f0aa1acb8763110|||||||||||||||
 plot_age_predictions|stem|3e6d6a4dda60d6db|0dfa18cd23b2d670|e1308ec02de65402|1633576260||t19927.1676521856s|d21be8cf0dd771ce|44|rds|local|vector|||0||
-plot_age_predictions_long|stem|07d0c9ce1435b620|ae10f7434fb7d173|4d313438db31760b|1427437940||t19927.2192694418s|28057ca7a7a74a6a|1927034|rds|local|vector|||0.19||
+plot_age_predictions_long|stem|769a7f6c73cf6574|ae10f7434fb7d173|791fff95d9292003|1427437940||t19927.2203832841s|1d7795a347abc8d8|1925178|rds|local|vector|||0.11||
 polymod_contact_data|stem|344675cb60ed8661|29e5840a771e724a|2c530c1562a7fbd1|-1141518991||t19927.1592828754s|91baf6b6bc8d56cc|28377|rds|local|vector|||3.28||
 polymod_setting_models|stem|750f7c2d0eed9aff|8e70847e9ae64c16|67b560aa7ff09882|1194962124||t19927.1605214277s|f190880c29361cf9|3046331|rds|local|vector|||106.78|algorithm did not converge. fitted rates numerically 0 occurred. fitted rates numerically 0 occurred|
 polymod_survey_data|stem|2145733fca2dc4e1|9ee69af738a33972|2c530c1562a7fbd1|498738490||t19927.1592440664s|6d5a274eade38264|421|rds|local|vector|||1.37||
