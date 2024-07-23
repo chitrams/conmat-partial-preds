@@ -6,9 +6,13 @@ lapply(list.files("./R", full.names = TRUE), source)
 
 tar_plan(
 
+  # Prepare data -----
+
   # Extract setting-wise contact data
   polymod_contact_data = get_polymod_setting_data(),
   polymod_survey_data = get_polymod_population(),
+
+  # Model fitting -----
 
   # Fit the model
   polymod_setting_models = fit_setting_contacts(
@@ -16,17 +20,20 @@ tar_plan(
     population = polymod_survey_data
   ),
 
-  # Extract model results for each setting
+  #%% Extract model results for each setting ----
   fit_home = polymod_setting_models$home,
   fit_work = polymod_setting_models$work,
   fit_school = polymod_setting_models$school,
   fit_other = polymod_setting_models$other,
 
+  #%% Model summary ----
   fit_home_summary = summary(fit_home),
 
+  #%% Plot PDPs for each term -----
   partial_dep_home = draw(fit_home, residuals = TRUE) +
     plot_annotation(title = "Home setting"),
 
+  #%% Save plots as png ------
   tar_target(
     fig_home_pdp,
     ggsave(
@@ -35,11 +42,12 @@ tar_plan(
       units = "in")
   ),
 
+  # Extract estimates -----
   smooth_home = smooth_estimates(fit_home),
 
   smooth_home_long = smooth_long(smooth_home),
 
-  ## Smoothed estimates are not on the right scale - lets write our own
+  ## Smoothed estimates are not on the right scale - let's write our own
   ## gridded data to fit the partial predictions to.
   age_grid = create_age_grid(ages = 1:99),
 
