@@ -16,6 +16,7 @@ tar_plan(
     population = polymod_survey_data
   ),
 
+  # Extract model results for each setting
   fit_home = polymod_setting_models$home,
   fit_work = polymod_setting_models$work,
   fit_school = polymod_setting_models$school,
