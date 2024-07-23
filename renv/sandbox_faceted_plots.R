@@ -64,6 +64,8 @@ library(ggplot2)
 library(viridis)
 library(gridExtra)
 
+# Is there a way to use map below instead?
+# Or at least understand how lapply works
 plots <- lapply(unique(age_predictions_long$pred), function(g) {
   ggplot(subset(age_predictions_long, pred == g),
          aes(
