@@ -27,6 +27,14 @@ tar_plan(
   partial_dep_home = draw(fit_home, residuals = TRUE) +
     plot_annotation(title = "Home setting"),
 
+  tar_target(
+    fig_home_pdp,
+    ggsave(
+      filename = "figures/pdp_home.png",
+      width = 8, height = 6,
+      units = "in")
+  ),
+
   smooth_home = smooth_estimates(fit_home),
 
   smooth_home_long = smooth_long(smooth_home),
