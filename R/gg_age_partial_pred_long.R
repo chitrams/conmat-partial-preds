@@ -21,7 +21,6 @@ gg_age_partial_pred_long <- function(age_predictions_long) {
     facet_wrap(~pred, scales = "free") +
     geom_tile() +
     scale_fill_viridis_c() +
-    theme_minimal() +
-    coord_fixed()
+    theme_minimal()
 
 }
